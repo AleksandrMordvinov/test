@@ -1,0 +1,6 @@
+.nav {
+	@apply bg-orange-500 text-white p-3;
+}
+.link {
+	@apply m-5 text-xl;
+}
