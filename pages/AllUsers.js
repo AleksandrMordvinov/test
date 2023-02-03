@@ -1,13 +1,18 @@
 import Link from 'next/link'
 import Nav from '../components/Nav'
+import Price from '../components/Price'
 
 const AllUsers = ({ data }) => {
-	console.log(data)
+	//console.log(data)
 	return (
-		<div className='m-10'>
-			<div>ETH: {data.ethereum.usd}</div>
-			<div>GODS: {data['gods-unchained'].usd}</div>
-		</div>
+		<>
+			<Nav />
+			<Price />
+			<div className='m-10'>
+				<div>ETH: {data.ethereum.usd}</div>
+				<div>GODS: {data['gods-unchained'].usd}</div>
+			</div>
+		</>
 	)
 }
 export default AllUsers
